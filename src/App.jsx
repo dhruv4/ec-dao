@@ -151,7 +151,6 @@ const App = () => {
     if (!address) {
       return;
     }
-    console.log("signer", signer)
     return bundleDropModule
       .balanceOf(address, "0")
       .then((balance) => {
@@ -180,7 +179,7 @@ const App = () => {
       </div>
     );
   }
-  
+
   if (!address) {
     return (
       <div className="landing">
